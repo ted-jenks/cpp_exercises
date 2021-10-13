@@ -1,0 +1,2 @@
+Copy: Copy.cpp
+	g++ -Wall -g Copy.cpp -0 Copy

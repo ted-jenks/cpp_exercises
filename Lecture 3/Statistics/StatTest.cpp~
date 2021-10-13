@@ -1,0 +1,69 @@
+#include <iostream>
+#include "Statistics.h"
+
+using namespace std;
+
+int main() {
+  int number;
+  double ave, stad;
+  int temp = 9;
+
+  double var1, var2, var3, var4;
+  
+
+  while(temp<10){
+    
+    cout << "This program tests the functions in the 'statistics.h' header file.\n\n";
+    cout << "Do you wish to test 1, 2, 3 or 4 numbers (enter 0 to end the program):";
+    cin >> number;
+
+    switch(number)
+      {
+      case 0:
+	cout << "Finished testing statistics.h header file.\n";
+	return 0;
+	break;
+      case 1:
+	cout << "Enter first value: "; 
+	cin >> var1;
+	ave = average(var1);
+	stad = standarddev(var1);
+	cout << "Average: " << ave << ". Standard Deviation: " << stad << ".\n";
+	break;
+      case 2:
+	cout << "Enter first value: ";
+	cin >> var1;
+	cout << "Enter second value: ";
+	cin >> var2;
+	ave = average(var1,var2);
+	stad = standarddev(var1,var2);
+	cout << "Average: " << ave << ". Standard Deviation: " << stad << ".\n";
+	break;
+      case 3:
+	cout << "Enter first value: ";
+	cin >> var1;
+	cout << "Enter second value: ";
+	cin >> var2;
+	cout << "Enter third value: ";
+	cin >> var3;
+	ave = average(var1,var2, var3);
+	stad = standarddev(var1,var2,var3);
+	cout << "Average: " << ave << ". Standard Deviation: " << stad << ".\n";
+	break;
+      case 4:
+	cout << "Enter first value: ";
+	cin >> var1;
+	cout << "Enter second value: ";
+	cin >> var2;
+	cout << "Enter third value: ";
+	cin >> var3;
+	cout << "Enter forth value: ";
+	cin >> var4;
+	ave = average(var1,var2, var3, var4);
+	stad = standarddev(var1,var2,var3, var4);
+	cout << "Average: " << ave << ". Standard Deviation: " << stad << ".\n";
+	break;
+      }
+  }
+}
+      

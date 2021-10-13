@@ -1,0 +1,2 @@
+stream: StreamArgs.cpp
+	g++ -Wall -g StreamArgs.cpp -o StreamArgs

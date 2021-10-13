@@ -1,0 +1,23 @@
+#ifndef TEMPCONVERTER_H
+#define TEMPCONVERTER_H
+
+
+/* FUNCTION TO CONVERT FAHRENHEIT TO CELSIUS */
+double celsius_of(int fahr);
+
+/* FUNCTION TO CONVERT FAHRENHEIT TO ABSOLUTE VALUE */
+double absolute_value_of(int fahr);
+
+/* FUNCTION TO PRINT MESSAGE ABOUT PROGRAM FUNCTION */
+void print_preliminary_message();
+
+/* FUNCTION TO PROMPT THE USER FOR TABLE SPECS */
+void input_table_specifications(int& lower, int& upper, int& step);
+
+/* FUNCTION TO ECHO */
+void print_message_echoing_input(int lower, int upper, int step);
+
+/* FUNCTION TO PRINT TABLE */
+void print_table(int lower, int upper, int step);
+
+#enif

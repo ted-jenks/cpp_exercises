@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int running = 1, number, exp;
+  
+  cout << "Enter number:";
+  cin >> number;
+
+  cout << "Enter exponent:";
+  cin >> exp;
+
+  for (exp ; exp > 0 ; exp--) {
+    running = running * number;
+  }
+
+  cout << number << "^" << exp << " = " << running << endl;
+
+  return 0;
+}
