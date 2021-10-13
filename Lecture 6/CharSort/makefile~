@@ -1,0 +1,2 @@
+all: CharSortE.cpp
+	g++ -Wall -g CharSortE.cpp -o CharSort

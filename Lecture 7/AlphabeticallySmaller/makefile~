@@ -1,0 +1,2 @@
+all: AlphabeticallySmaller.cpp
+	g++ -Wall -g AlphabeticallySmaller.cpp -o Alpha

@@ -1,0 +1,2 @@
+all: NoReps.cpp
+	g++ -Wall -g NoReps.cpp -o NoReps
